@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>let input=stars(prompt('Nhập tên ngôi sao'));
+    function stars(input) {
+        let star1=[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let star2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let kq=false;
+        for (let i=0;i<star1.length;i++){
+            if (input == star1[i]){
+                kq=true;
+                return alert("Ngôi sao "+input+" nằm trong chòm "+star2[i]);
+            }
+        }
+        if (kq==false){
+            alert("không tìm thấy ngôi sao nào")
+        }
+
+    }
+
+</script>
